@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 60%;
+    background: linear-gradient(135deg, #e8f0fe, #d0e6f7); /* Soft gradient with blue tones */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for a 3D effect */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    padding: 20px; /* Add padding for better spacing */
+}
+
+a{
+    text-decoration: none;
+}
+
+button {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th, table td {
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+table td {
+    font-size: medium;
+}
+
+thead {
+    background-color: #f8f9fa;
+}
+
+button.details {
+    background-color: #17a2b8;
+}
+
+button.update {
+    background-color: #ffc107;
+}
+
+button.delete {
+    background-color: #dc3545;
+}
+
+button.details:hover {
+    background-color: #117a8b;
+}
+
+button.update:hover {
+    background-color: #d39e00;
+}
+
+button.delete:hover {
+    background-color: #c82333;
+}
+
+button.newRecordBtn{
+    display: flex;
+    justify-content: center;
+}

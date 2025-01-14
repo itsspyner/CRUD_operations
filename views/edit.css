@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 20px;
+    /* Add padding to prevent the top from being cut off */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    /* Ensure padding is included in layout calculations */
+}
+
+.form-container {
+    max-width: 400px;
+    /* Ensure it doesn't get too wide */
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    /* Add scroll if needed for smaller screens */
+    max-height: calc(100vh - 40px);
+    /* Fit within the visible viewport */
+}
+
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea,
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+span{
+    color: red;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details Form</title>
+    <link rel="stylesheet" href="edit.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <h2>User Details</h2>
+        <form id="details" onsubmit="return false">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <span id="nameerr"></span>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" placeholder="Enter your address" required>
+            <span id="addresserr"></span>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            <span id="phoneerr"></span>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <span id="emailerr"></span>
+
+            <label for="brief_description">Brief Description:</label>
+            <input type="text" id="brief_description" name="brief_description" maxlength="50"
+                placeholder="Enter your brief_description" required>
+            <span id="emailerr"></span>
+
+            <h2>Education Details</h2>
+
+            <label for="school">School:</label>
+            <input type="text" id="school" name="school" placeholder="School Name" required>
+            <span id="schoolerr"></span>
+
+            <label for="level">Level:</label>
+            <select id="level" name="level" required>
+                <option value="">Select level</option>
+                <option value="highschool">High School</option>
+                <option value="bachelor">Bachelor's</option>
+                <option value="master">Master's</option>
+                <option value="phd">PhD</option>
+            </select>
+            <span id="levelerr"></span>
+
+            <label for="year">Year:</label>
+            <input type="number" id="year" name="year" placeholder="School year e.g format(2018-2019)" required>
+            <span id="yearerr"></span>
+
+            <h2>Work Details</h2>
+
+            <label for="company">Company:</label>
+            <input type="text" id="company" name="company" placeholder="Enter your company name" required>
+            <span id="companyerr"></span>
+
+            <label for="position">Position:</label>
+            <input type="text" id="position" name="position" placeholder="Enter your position" required>
+            <span id="positionerr"></span>
+
+            <label for="duties">Duties:</label>
+            <input type="text" id="duties" name="duties" placeholder="Your duties" required>
+            <span id="dutieserr"></span>
+
+            <label for="work-year">Work Year:</label>
+            <input type="number" id="work-year" name="work-year" placeholder="Work year e.g format(2018-2019)" required>
+            <span id="work-yearerr"></span>
+
+            <label for="skills">Skills:</label>
+            <input type="text" id="skills" name="skills" placeholder="Your skills" required>
+            <span id="skillserr"></span>
+
+            <button type="submit">Update</button>
+        </form>
+    </div>
+    <script src="../service/edit.js"></script>
+
+</body>
+
+</html>
