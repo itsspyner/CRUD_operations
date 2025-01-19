@@ -25,7 +25,6 @@ function Submit() {
                             <button class="view"><a href='view.html?id=${user.id}'>View</a></button>
                             <button class="details"><a href='http://localhost:3000/download?id=${user.id}'>Download</a></button>
                             <button class="update"><a href='edit.html?id=${user.id}'>Update</a></button>
-      
                             <button class="delete"><a href='delete.html?id=${user.id}'>Delete</a></button>
                         </td>
                     </tr>

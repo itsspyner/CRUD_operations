@@ -21,5 +21,5 @@ fetch(`http://localhost:3000/delete/${id}`, {
     })
     .catch(error => {
         console.error('Error submitting the form:', error);
-        alert('Failed to submit the form. Please try again.'); // User feedback
+        alert('Failed to submit the form. Please try again.');
     });
