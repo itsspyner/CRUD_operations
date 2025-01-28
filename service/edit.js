@@ -46,16 +46,23 @@ document.getElementById('details').addEventListener('submit',
             method: 'PUT',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ personalInfo, education, workExperience, skills, brief_description })
-        })
+        });
         const result = await response.json();
         if (response.ok) {
             console.log('Updated successfully:', result.message);
             alert('Form Updated successfully!');
-            window.location.href = `http://localhost:3000/download?id=${id}`
+
             window.open('../views/index.html', '_blank');
-            document.getElementById('details').reset();
+
+            var link = document.createElement('a')
+            link.href = `../routes/resume_${id}.pdf`;
+            link.download = `resume_${id}.pdf`
+            link.click();
+            document.body.removeChild(link);
         } else {
             console.log('Error:', result);
+            console.log(result.err1)
             document.getElementById('emailerr').textContent = result.error;
         }
     });
+
