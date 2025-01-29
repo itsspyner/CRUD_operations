@@ -16,7 +16,7 @@ router.post('/delete/:id', async (req, res) => {
     }
     const data = await select.deleteWithId(id);
     if (!data) return res.status(500).json({ error: 'Error deleting data' });
-    else return res.status(200).json({ message: 'Data deleted successfully' });
+    else return res.status(204).json({ message: 'Data deleted successfully' });
 
 });
 
