@@ -15,7 +15,7 @@ router.post('/addData', async (req, res) => {
     if (!info) return res.status(500).json({ error: 'Failed to add data' });
     else {
         console.log("Success");
-        return res.status(200).json({ message: 'Successfully inserted' });
+        return res.status(201).json({ message: 'Successfully inserted' });
     }
 });
 
